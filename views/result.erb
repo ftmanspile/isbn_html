@@ -1,16 +1,39 @@
-<html>
 
-<head>
-	
-</head>
+<%
+location = picture(book_title)
+isbn = from_guide(book_title)
+website = buy_me(book_title)
+%>
+
+
+
 
 <body>
+<center><p><b><font size= "48" color= "black"> The stategy guide you have requested is shown below.</font></b></p></center>
+<br>
+<br>
+
+<center><img src = <%= location %>  style="width: 25%;" align="middle";>
+<br>
+<br>
+<b><font size= "48" color= "black">ISBN: <%= isbn %></font></b></center>
+
+<% strat_guide = (book_title) %>
+<center><p><b><font size= "48" color= "black"><%= strat_guide %></font></b></p></center>
+
+<a href= <%= website %>><center><b><font size= "48" color= "black">Click here to buy!</font></b></center></a>
+
+
 
 </body>
+
+
+
+
+
 
 <footer>
 
 </footer>
 	
 
-<html>
